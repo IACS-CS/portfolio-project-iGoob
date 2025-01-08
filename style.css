@@ -33,17 +33,33 @@ body {
   color: white;
   font-size: 70px;
   text-align: center;
-
+padding: 100px;
 /* A little "activation" to demonstrate JS is working in the template */
+}
 
 
 main {
   /* Make sure our content can scroll the hero away */
   min-height: 100dvh;
-  max-width: 35em; /* choose a width for text */
+  max-width: 30em; /* choose a width for text */
   line-height: 1.8; /* choose a line spacing */
-  font-size: 25px; /* choose a font size */
+  font-size: 30px; /* choose a font size */
   margin: 0 auto; /* center the content */
-  text-align:center;
+}
 
+a{
+  color:brown;
+  text-decoration:none;
+  font-weight:bolder;
+}
+
+h2{
+  padding-top:100px;
+  font-size:75px;
+}
+
+.skibidi{
+  max-width:fit-content;
+  max-height:400px;
+  border:black solid 5px;
 }
