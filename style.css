@@ -10,12 +10,8 @@ html {
 body {
   /* Change to something you like, but please do customize the font! */
   font-family:"Teko", serif;
-  line-height: 1.4;
-  /* reset default margins */
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  background-color:rgb(90, 53, 8);
+  background-color:rgb(255, 255, 255);
   text-align:center;
   font-size: 25px;
 }
@@ -29,11 +25,12 @@ body {
   display: grid;
   place-content: center;
   /* Custom text and stuff */
-  background: #1b6e00;
+  background-image: url("Top.png");
+  background-position-x: 15px;
   color: white;
   font-size: 70px;
   text-align: center;
-padding: 100px;
+
 /* A little "activation" to demonstrate JS is working in the template */
 }
 
@@ -41,10 +38,11 @@ padding: 100px;
 main {
   /* Make sure our content can scroll the hero away */
   min-height: 100dvh;
-  max-width: 30em; /* choose a width for text */
   line-height: 1.8; /* choose a line spacing */
   font-size: 30px; /* choose a font size */
   margin: 0 auto; /* center the content */
+  background-image: url("dirt.png");
+  background-position-x: 15px;
 }
 
 a{
@@ -54,7 +52,7 @@ a{
 }
 
 h2{
-  padding-top:100px;
+  padding-top:200px;
   font-size:75px;
 }
 
@@ -62,4 +60,21 @@ h2{
   max-width:fit-content;
   max-height:400px;
   border:black solid 5px;
+}
+
+/* Other styles remain unchanged */
+
+/* Styles for the clickable placeholder */
+.clickable-item {
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+  margin: 20px auto; /* Center it within its parent */
+}
+
+.clickable-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
 }

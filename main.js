@@ -1,12 +1,24 @@
-// Write JavaScript here.
-console.log("main.js loaded successfully!");
+// main.js
 
-/* Some sample JavaScript: this just listens 
-for any "click" on the hero element and then
-toggles the "active" class which we use to
-shift colors when they click */
-let hero = document.querySelector(".hero");
-hero.addEventListener("click", () => {
-  console.log("They clicked the hero!");
-  hero.classList.toggle("active");
+// List of image sources (placeholders)
+const placeholderImages = [
+  "placeholder1.png", // Placeholder 1
+  "placeholder2.png", // Placeholder 2
+  "placeholder3.png", // Placeholder 3
+];
+
+// Reference to the clickable item
+const clickableItem = document.getElementById("clickable-placeholder");
+
+// Reference to the image inside the clickable item
+const imageElement = clickableItem.querySelector("img");
+
+// Current image index
+let currentIndex = 0;
+
+// Click event listener to cycle through images
+clickableItem.addEventListener("click", function () {
+  // Change to the next image
+  currentIndex = (currentIndex + 1) % placeholderImages.length;
+  imageElement.src = placeholderImages[currentIndex]; // Update image source
 });
